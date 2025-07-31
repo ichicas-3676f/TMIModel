@@ -12,43 +12,43 @@ MODEL_CONFIG = {
 
 INSTRUCT_CONFIG = {
     "0_1_b": {
-        "lr": 0.0001,
+        "lr": 0.00005,
         "distributed": "ddp",
         "gpu_count": 1,
-        "batch_size": 140,
+        "batch_size": 64,
         "use_lora": False
     },
     "1_2_b": {
-        "lr": 0.0001,
+        "lr": 0.00005,
         "distributed": "ddp",
         "gpu_count": 1,
         "use_lora": False,
-        "batch_size": 100,
-    },
-    "2_4_b": {
-        "lr": 8e-5,
-        "distributed": "ddp",
-        "gpu_count": 1,
         "batch_size": 48,
     },
-    "4_5_b": {
-        "lr": 6e-5,
-        "distributed": "ddp",
-        "gpu_count": 2,
-        "batch_size": 40,
-    },
-    "5_9_b": {
+    "2_4_b": {
         "lr": 4e-5,
         "distributed": "ddp",
+        "gpu_count": 1,
+        "batch_size": 32,
+    },
+    "4_5_b": {
+        "lr": 3e-5,
+        "distributed": "ddp",
         "gpu_count": 2,
-        "batch_size": 30,
+        "batch_size": 32,
+    },
+    "5_9_b": {
+        "lr": 3e-5,
+        "distributed": "ddp",
+        "gpu_count": 2,
+        "batch_size": 24,
     },
     "9_12_b": {
         "lr": 0.00015,
         "distributed": "ddp",
         "gpu_count": 2,
         "use_lora": True,
-        "batch_size": 32,
+        "batch_size": 24,
     },
     "12_15_b": {
         "lr": 0.0001,
